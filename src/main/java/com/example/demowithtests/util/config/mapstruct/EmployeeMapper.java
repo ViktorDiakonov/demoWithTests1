@@ -7,7 +7,7 @@ import com.example.demowithtests.dto.EmployeeUpdateDto;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
-public interface EmployeeToDtoMapper {
+public interface EmployeeMapper {
 
     EmployeeReadDto employeeToReadDto(Employee employee);
     Employee employeeReadDtoToEmployee(EmployeeReadDto employeeReadDto);

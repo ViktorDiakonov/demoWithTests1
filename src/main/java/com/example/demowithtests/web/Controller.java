@@ -3,7 +3,7 @@ package com.example.demowithtests.web;
 import com.example.demowithtests.domain.Employee;
 import com.example.demowithtests.dto.*;
 import com.example.demowithtests.service.Service;
-import com.example.demowithtests.util.config.mapstruct.EmployeeToDtoMapper;
+import com.example.demowithtests.util.config.mapstruct.EmployeeMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -24,7 +24,7 @@ import java.util.List;
 public class Controller {
 
     private final Service service;
-    private final EmployeeToDtoMapper mapper;
+    private final EmployeeMapper mapper;
 
     //Операция сохранения юзера в базу данных
     @PostMapping("/users")
